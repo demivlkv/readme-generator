@@ -8,7 +8,7 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the name of your project? (Required)',
+        message: 'What is the name of your project? (REQUIRED)',
         validate: titleInput => {
             if (titleInput) {
                 return true;
@@ -21,38 +21,46 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Provide a description of your project.'
+        message: 'Provide a description of your project. (REQUIRED)',
+        validate: descInput => {
+            if (descInput) {
+                return true;
+            } else {
+                console.log('Please enter a description for your project!');
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'installation',
-        message: 'Provide installation intructions for your project.'
+        message: '(OPTIONAL) Provide installation intructions for your project.'
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'Provide instructions and examples for use. Include screenshots if needed.'
+        message: '(OPTIONAL) Provide instructions & examples for use. Option to add screenshots will be shown upon completion of this set of questions.'
     },
     {
         type: 'input',
-        name: 'contributing',
-        message: 'Provide guidelines for contributing'
+        name: 'contribution',
+        message: '(OPTIONAL) Provide guidelines for contributing'
     },
     {
         type: 'input',
         name: 'tests',
-        message: 'Provide instructions on how to test the application.'
+        message: '(OPTIONAL) Provide instructions on how to test the application.'
     },
     {
         type: 'checkbox',
         name: 'license',
-        message: 'Please select a license to use for your project. (Choose 1)',
+        message: 'Please select a license to use for your project. (CHOOSE 1)',
         choices: ['Apache 2.0', 'GNU GPL v3 ', 'MIT', 'None']
     },
     {
         type: 'input',
         name: 'github',
-        message: 'Enter your GitHub Username. (Required)',
+        message: 'Enter your GitHub Username. (REQUIRED)',
         validate: githubInput => {
             if (githubInput) {
                 return true;
@@ -65,7 +73,7 @@ const questions = [
     {
         type: 'input',
         name: 'email',
-        message: 'Enter your e-mail address. (Required)',
+        message: 'Enter your e-mail address. (REQUIRED)',
         validate: emailInput => {
             if (emailInput) {
                 return true;
@@ -77,28 +85,21 @@ const questions = [
     }
 ];
 
+// prompt questions to add screenshot(s) into README
 const promptScreenshot = readmeData => {
 	if (!readmeData.screenshots) {
 		readmeData.screenshots = [];
 	}
 	console.log(`
-====================
-Add a New Screenshot
-====================
+===============================
+Add a New Screenshot (OPTIONAL)
+===============================
 	`);
 	return inquirer.prompt([
 		{
 			type: 'input',
 			name: 'img',
-			message: 'Please create an `assets/images` folder and upload your screenshot in it. Then provide the image file name.',
-			validate: scrnshotInput => {
-				if (scrnshotInput) {
-					return true;
-				} else {
-					console.log('Please enter the screenshot file name.');
-					return false;
-				}
-			}
+			message: '(OPTIONAL) Create an `assets/images` folder & upload your screenshot file in it. Then provide the image file name.',
 		},
         {
             type: 'confirm',

@@ -1,11 +1,11 @@
 // return license badge based on which license is passed in
 const renderLicenseBadge = license => {
   if (license == 'Apache 2.0') {
-    return `https://img.shields.io/badge/License-Apache_2.0-yellowgreen`;
+    return `[![License: ${license}](https://img.shields.io/badge/License-Apache_2.0-yellowgreen)`;
   } else if (license == 'GNU GPL v3') {
-    return `https://img.shields.io/badge/License-GPLv3-blue`;
+    return `[![License: ${license}](https://img.shields.io/badge/License-GPLv3-9cf)`;
   } else if (license == 'MIT') {
-    return `https://img.shields.io/badge/License-MIT-yellow`;
+    return `[![License: ${license}](https://img.shields.io/badge/License-MIT-yellow)`;
   } else {
     return '';
   }
@@ -14,11 +14,11 @@ const renderLicenseBadge = license => {
 // return the respective license link
 const renderLicenseLink = license => {
   if (license == 'Apache 2.0') {
-    return `https://opensource.org/licenses/Apache-2.0`;
+    return `(https://opensource.org/licenses/Apache-2.0)`;
   } else if (license == 'GNU GPL v3') {
-    return `https://www.gnu.org/licenses/gpl-3.0`;
+    return `(https://www.gnu.org/licenses/gpl-3.0)`;
   } else if (license == 'MIT') {
-    return `https://opensource.org/licenses/MIT`;
+    return `(https://opensource.org/licenses/MIT)`;
   } else {
     return '';
   }
@@ -27,13 +27,53 @@ const renderLicenseLink = license => {
 // returns the license section of README
 const renderLicenseSection = license => {
   if (license == 'Apache 2.0') {
-    return `Please visit this [link](https://choosealicense.com/licenses/apache-2.0/) for more information regarding this license.`;
+    return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/apache-2.0/) for more information regarding this license.`;
   } else if (license == 'GNU GPL v3') {
-    return `Please visit this [link](https://choosealicense.com/licenses/gpl-3.0/) for more information regarding this license.`;
+    return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/gpl-3.0/) for more information regarding this license.`;
   } else if (license == 'MIT') {
-    return `Please visit this [link](https://choosealicense.com/licenses/mit/) for more information regarding this license.`;
+    return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/mit/) for more information regarding this license.`;
   } else {
     return '';
+  }
+};
+
+// adds installation section to README if there is input
+const generateInstall = install => {
+  if (!install) {
+    return '';
+  } else {
+  return `## Installation
+${install}`;
+  }
+};
+
+// adds usage section to README if there is input
+const generateUsage = use => {
+  if (!use) {
+    return '';
+  } else {
+  return `## Usage
+${use}`;
+  }
+};
+
+// adds contribution section to README if there is input
+const generateContribute = cont => {
+  if (!cont) {
+    return '';
+  } else {
+  return `## Contribution
+${cont}`
+  }
+};
+
+// adds test section to README if there is input
+const generateTest = test => {
+  if (!test) {
+    return '';
+  } else {
+  return `## Tests
+${test}`
   }
 };
 
@@ -55,30 +95,27 @@ const generateScreenshot = screenshots => {
 const generateMarkdown = data => {
   return `
 # ${data.title}
-[![License: ${data.license}](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
+${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
 
 ## Description
 ${data.description}
 
 ## Table of Contents
-${data.contents}
+- [License](#license)
+- [Questions](#questions)
 
-## Installation
-${data.installation}
+${generateInstall(data.installation)}
 
-## Usage
-${data.usage}
+${generateUsage(data.usage)}
 
 ${generateScreenshot(data.screenshots)}
 
-## Contributing
-${data.contributing}
+${generateContribute(data.contribution)}
 
-## Tests
-${data.tests}
+${generateTest(data.tests)}
 
 ## License
-This application is protected under the ${data.license} license. ${renderLicenseSection(data.license)}
+${renderLicenseSection(data.license)}
 
 ## Questions
 For any questions about this repository, please contact me at [${data.email}](mailto:${data.email}).
