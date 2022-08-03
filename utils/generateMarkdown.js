@@ -1,5 +1,5 @@
 // return license badge based on which license is passed in
-let renderLicenseBadge = license => {
+const renderLicenseBadge = license => {
   if (license == 'Apache 2.0') {
     return `https://img.shields.io/badge/License-Apache_2.0-yellowgreen`;
   } else if (license == 'GNU GPL v3') {
@@ -12,7 +12,7 @@ let renderLicenseBadge = license => {
 };
 
 // return the respective license link
-let renderLicenseLink = license => {
+const renderLicenseLink = license => {
   if (license == 'Apache 2.0') {
     return `https://opensource.org/licenses/Apache-2.0`;
   } else if (license == 'GNU GPL v3') {
@@ -21,6 +21,17 @@ let renderLicenseLink = license => {
     return `https://opensource.org/licenses/MIT`;
   } else {
     return '';
+  }
+};
+
+// return screenshot for usage section of README
+const generateScreenshot = screenshots => {
+  if (!screenshots) {
+    return '';
+  } else {
+    return `
+![${screenshots.img}](/../main/assets/images/${screenshots.img})
+    `;
   }
 };
 
@@ -38,11 +49,16 @@ function generateMarkdown(data) {
 ## Description
 ${data.description}
 
+## Table of Contents
+${data.contents}
+
 ## Installation
 ${data.installation}
 
 ## Usage
 ${data.usage}
+
+${generateScreenshot(data.screenshots)}
 
 ## Contributing
 ${data.contributing}

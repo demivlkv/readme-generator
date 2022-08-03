@@ -77,6 +77,46 @@ const questions = [
     }
 ];
 
+const promptScreenshot = readmeData => {
+	if (!readmeData.screenshots) {
+		readmeData.screenshots = [];
+	}
+	console.log(`
+====================
+Add a New Screenshot
+====================
+	`);
+	return inquirer.prompt([
+		{
+			type: 'input',
+			name: 'img',
+			message: 'Please create an `assets/images` folder and upload your screenshot in it. Then provide the image file name.',
+			validate: scrnshotInput => {
+				if (scrnshotInput) {
+					return true;
+				} else {
+					console.log('Please enter the screenshot file name.');
+					return false;
+				}
+			}
+		},
+        {
+            type: 'confirm',
+            name: 'confirmAddScreenshot',
+            message: 'Would you like to add another screenshot?',
+            default: false
+        }
+    ])
+    .then(screenshotData => {
+        readmeData.screenshots.push(screenshotData);
+        if (screenshotData.confirmAddScreenshot) {
+            return promptScreenshot(readmeData);
+        } else {
+            return readmeData;
+        }
+    });
+};
+
 // function to write README file
 const writeToFile = (fileName, data) => {
     return new Promise((resolve, reject) => {
@@ -87,7 +127,7 @@ const writeToFile = (fileName, data) => {
             }
             resolve({
                 ok: true,
-                message: 'README.md created!'
+                message: 'Success! A new README.md file has been created!'
             });
         });
     });
@@ -100,6 +140,9 @@ const init = () => {
 
 // function call to initialize app
 init()
+    .then(readmeData => {
+    return promptScreenshot(readmeData);
+    })
     .then(data => {
         console.log(data);
         return generateMarkdown(data);
