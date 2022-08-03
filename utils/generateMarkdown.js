@@ -24,9 +24,23 @@ const renderLicenseLink = license => {
   }
 };
 
+// returns the license section of README
+const renderLicenseSection = license => {
+  if (license == 'Apache 2.0') {
+    return `Please visit this [link](https://choosealicense.com/licenses/apache-2.0/) for more information regarding this license.`;
+  } else if (license == 'GNU GPL v3') {
+    return `Please visit this [link](https://choosealicense.com/licenses/gpl-3.0/) for more information regarding this license.`;
+  } else if (license == 'MIT') {
+    return `Please visit this [link](https://choosealicense.com/licenses/mit/) for more information regarding this license.`;
+  } else {
+    return '';
+  }
+};
+
 // return screenshot & display under usage section of README
 const generateScreenshot = screenshots => {
   let scrnshotList = '';
+
   if (screenshots) {
     screenshots.forEach(item => {
       scrnshotList += `![${item.img}](/../main/assets/images/${item.img})`;
@@ -37,13 +51,8 @@ const generateScreenshot = screenshots => {
   }
 };
 
-// TODO: Create a function that returns the license section of README
-function renderLicenseSection(license) {
-
-}
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+// generate markdown file for README
+const generateMarkdown = data => {
   return `
 # ${data.title}
 [![License: ${data.license}](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
@@ -69,7 +78,7 @@ ${data.contributing}
 ${data.tests}
 
 ## License
-${data.license}
+This application is protected under the ${data.license} license. ${renderLicenseSection(data.license)}
 
 ## Questions
 For any questions about this repository, please contact me at [${data.email}](mailto:${data.email}).
