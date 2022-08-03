@@ -24,14 +24,16 @@ const renderLicenseLink = license => {
   }
 };
 
-// return screenshot for usage section of README
+// return screenshot & display under usage section of README
 const generateScreenshot = screenshots => {
-  if (!screenshots) {
-    return '';
+  let scrnshotList = '';
+  if (screenshots) {
+    screenshots.forEach(item => {
+      scrnshotList += `![${item.img}](/../main/assets/images/${item.img})`;
+    });
+    return `${scrnshotList}`;
   } else {
-    return `
-![${screenshots.img}](/../main/assets/images/${screenshots.img})
-    `;
+    return '';
   }
 };
 
