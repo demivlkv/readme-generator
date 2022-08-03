@@ -47,7 +47,7 @@ const questions = [
         type: 'checkbox',
         name: 'license',
         message: 'Please select a license to use for your project.',
-        choices: ['Apache', 'MIT', 'GNU', 'None']
+        choices: ['Apache 2.0', 'GNU GPL v3 ', 'MIT', 'None']
     },
     {
         type: 'input',
@@ -108,7 +108,7 @@ init()
         return writeToFile(markdown);
     })
     .then(writeFileResponse => {
-        console.log(writeFileResponse);
+        console.log(writeFileResponse.message);
     })
     .catch(err => {
         console.log(err)
