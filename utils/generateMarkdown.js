@@ -6,6 +6,8 @@ const renderLicenseBadge = license => {
     return `[![License: ${license}](https://img.shields.io/badge/License-GPLv3-lightblue)]`;
   } else if (license == 'MIT') {
     return `[![License: ${license}](https://img.shields.io/badge/License-MIT-yellow)]`;
+  } else if (license == 'No License') {
+    return `[![License: ${license}](https://img.shields.io/badge/License-No_License-lightgreen)]`;
   } else {
     return '';
   }
@@ -19,6 +21,8 @@ const renderLicenseLink = license => {
     return `(https://www.gnu.org/licenses/gpl-3.0)`;
   } else if (license == 'MIT') {
     return `(https://opensource.org/licenses/MIT)`;
+  } else if (license == 'No License') {
+    return `(https://choosealicense.com/no-permission/)`;
   } else {
     return '';
   }
@@ -32,6 +36,8 @@ const renderLicenseSection = license => {
     return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/gpl-3.0/) for more information about this license.`;
   } else if (license == 'MIT') {
     return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/mit/) for more information about this license.`;
+  } else if (license == 'No License') {
+    return `This application is protected under the ${license} exclusive copyright by default. Please visit this [link](https://choosealicense.com/no-permission/) for more information.`;
   } else {
     return `This application's current license is unavailable at this time.`;
   }

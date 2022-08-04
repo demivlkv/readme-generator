@@ -63,7 +63,7 @@ const questions = [
         type: 'checkbox',
         name: 'license',
         message: 'Please select a license to use for your project. (CHOOSE 1)',
-        choices: ['Apache 2.0', 'GNU GPL v3', 'MIT', 'None']
+        choices: ['Apache 2.0', 'GNU GPL v3', 'MIT', 'No License', 'Skip']
     },
     {
         type: 'input',
