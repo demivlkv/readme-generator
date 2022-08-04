@@ -51,7 +51,7 @@ const tocContribute = (item) => {
   if (!item) {
     return '';
   } else {
-    return `- [Contribution](#contribution)`;
+    return `- [Contributing](#contributing)`;
   }
 };
 
@@ -79,7 +79,7 @@ const generateContribute = cont => {
   if (!cont) {
     return '';
   } else {
-  return `## Contribution
+  return `## Contributing
 ${cont}`
   }
 };
@@ -133,6 +133,7 @@ ${data.usage}
 ${generateScreenshot(data.screenshots)}
 
 ${generateContribute(data.contribute)}
+
 ${generateTest(data.tests)}
 
 ## License

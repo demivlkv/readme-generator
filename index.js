@@ -107,7 +107,7 @@ Add a New Screenshot (OPTIONAL)
 		{
 			type: 'input',
 			name: 'img',
-			message: '(OPTIONAL) Create an `assets/images` folder & upload your screenshot file in it. Then provide the image file name.',
+			message: 'Create an `assets/images` folder & upload your screenshot file in it. Then provide the image file name. (OPTIONAL)',
 		},
         {
             type: 'confirm',
