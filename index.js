@@ -34,28 +34,36 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: '(OPTIONAL) Provide installation intructions for your project.'
+        message: 'Provide installation intructions for your project.'
     },
     {
         type: 'input',
         name: 'usage',
-        message: '(OPTIONAL) Provide instructions & examples for use. Option to add screenshots will be shown upon completion of this set of questions.'
+        message: 'Provide instructions & examples for use. Option to add screenshots will be shown upon completion of this set of questions. (REQUIRED)',
+        validate: usageInput => {
+            if (usageInput) {
+                return true;
+            } else {
+                console.log('Please enter any instructions for use!');
+                return false;
+            }
+        }
     },
     {
         type: 'input',
-        name: 'contribution',
-        message: '(OPTIONAL) Provide guidelines for contributing'
+        name: 'contribute',
+        message: 'Provide guidelines for contributing to this project.'
     },
     {
         type: 'input',
         name: 'tests',
-        message: '(OPTIONAL) Provide instructions on how to test the application.'
+        message: 'Provide instructions on how to test the application.'
     },
     {
         type: 'checkbox',
         name: 'license',
         message: 'Please select a license to use for your project. (CHOOSE 1)',
-        choices: ['Apache 2.0', 'GNU GPL v3 ', 'MIT', 'None']
+        choices: ['Apache 2.0', 'GNU GPL v3', 'MIT', 'None']
     },
     {
         type: 'input',

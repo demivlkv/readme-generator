@@ -1,11 +1,11 @@
 // return license badge based on which license is passed in
 const renderLicenseBadge = license => {
   if (license == 'Apache 2.0') {
-    return `[![License: ${license}](https://img.shields.io/badge/License-Apache_2.0-yellowgreen)`;
+    return `[![License: ${license}](https://img.shields.io/badge/License-Apache_2.0-yellowgreen)]`;
   } else if (license == 'GNU GPL v3') {
-    return `[![License: ${license}](https://img.shields.io/badge/License-GPLv3-9cf)`;
+    return `[![License: ${license}](https://img.shields.io/badge/License-GPLv3-lightblue)]`;
   } else if (license == 'MIT') {
-    return `[![License: ${license}](https://img.shields.io/badge/License-MIT-yellow)`;
+    return `[![License: ${license}](https://img.shields.io/badge/License-MIT-yellow)]`;
   } else {
     return '';
   }
@@ -33,7 +33,34 @@ const renderLicenseSection = license => {
   } else if (license == 'MIT') {
     return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/mit/) for more information regarding this license.`;
   } else {
+    return `This application's current license is unavailable at this time.`;
+  }
+};
+
+// add installation section in table of contents if there is input
+const tocInstall = (item) => {
+  if (!item) {
     return '';
+  } else {
+    return `- [Installation](#installation)`;
+  }
+};
+
+// add contribution section in table of contents if there is input
+const tocContribute = (item) => {
+  if (!item) {
+    return '';
+  } else {
+    return `- [Contribution](#contribution)`;
+  }
+};
+
+// add test section in table of contents if there is input
+const tocTest = (item) => {
+  if (!item) {
+    return '';
+  } else {
+    return `- [Tests](#tests)`;
   }
 };
 
@@ -44,16 +71,6 @@ const generateInstall = install => {
   } else {
   return `## Installation
 ${install}`;
-  }
-};
-
-// adds usage section to README if there is input
-const generateUsage = use => {
-  if (!use) {
-    return '';
-  } else {
-  return `## Usage
-${use}`;
   }
 };
 
@@ -81,13 +98,13 @@ ${test}`
 const generateScreenshot = screenshots => {
   let scrnshotList = '';
 
-  if (screenshots) {
+  if (!screenshots) {
+    return '';
+  } else {
     screenshots.forEach(item => {
       scrnshotList += `![${item.img}](/../main/assets/images/${item.img})`;
     });
     return `${scrnshotList}`;
-  } else {
-    return '';
   }
 };
 
@@ -101,17 +118,21 @@ ${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
 ${data.description}
 
 ## Table of Contents
+${tocInstall(data.installation)}
+- [Usage](#usage)
+${tocContribute(data.contribute)}
+${tocTest(data.tests)}
 - [License](#license)
 - [Questions](#questions)
 
 ${generateInstall(data.installation)}
 
-${generateUsage(data.usage)}
+## Usage
+${data.usage}
 
 ${generateScreenshot(data.screenshots)}
 
-${generateContribute(data.contribution)}
-
+${generateContribute(data.contribute)}
 ${generateTest(data.tests)}
 
 ## License
