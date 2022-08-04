@@ -16,12 +16,12 @@ This particular project is a command-line application that dynamically generates
 - [Questions](#questions)
 
 ## Installation
-To install this application, `git clone` this repository, or download the .zip file in the dropdown after clicking the green ‘Code’ button at the top of this repository—as long as it is in your local branch.
+To install this application, `git clone` this repository, or download the `.zip` file in the dropdown after clicking the green ‘Code’ button at the top of this repository—as long as it is in your local branch.
 
 Using the code editor of your choice, run `npm inquirer` in command line of terminal. Documentation for `Inquirer` can be accessed [here](https://www.npmjs.com/package/inquirer).
 
 ## Usage
-It is important to note that you are in the root directory in order for this application to run successfully. This application will initialize by running `node index.js` into the command line. The `inquirer` package for node.js triggers a series of questions regarding your project. Answer as much as possible in order to offer a quality README presentation that includes a fancy table of contents.
+It is important to note that you are in the root directory in order for this application to run successfully. This application will initialize by running `node index.js` into the command line of terminal. The `inquirer` package for node.js triggers a series of questions regarding your project. Answer as many questions possible in order to show off a quality README presentation that includes a fancy table of contents.
 
 The newly-generated README.md file will be found in the `dist` folder. Copy the contents and paste it to where you need it!
 
