@@ -27,11 +27,11 @@ const renderLicenseLink = license => {
 // returns the license section of README
 const renderLicenseSection = license => {
   if (license == 'Apache 2.0') {
-    return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/apache-2.0/) for more information regarding this license.`;
+    return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/apache-2.0/) for more information about this license.`;
   } else if (license == 'GNU GPL v3') {
-    return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/gpl-3.0/) for more information regarding this license.`;
+    return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/gpl-3.0/) for more information about this license.`;
   } else if (license == 'MIT') {
-    return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/mit/) for more information regarding this license.`;
+    return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/mit/) for more information about this license.`;
   } else {
     return `This application's current license is unavailable at this time.`;
   }

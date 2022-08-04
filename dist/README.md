@@ -1,9 +1,9 @@
 
-# Professional README Generator
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)
+# Sample Project Title
+[![License: GNU GPL v3](https://img.shields.io/badge/License-GPLv3-lightblue)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Description
-A quality README.md is essential for an important project. The README introduces a project, describes what the application is, how to use it, how to install, how to report issues, and how to make contributions—this last part increases the likelihood that other developers will contribute to the success of the project.   This particular project is a command-line application that dynamically generates a README.md file with ease. To view a sample of a README.md file created with this application, please refer to [sampleREADME.md](/../main/dist/sampleREADME.md) file in the `dist` folder.
+Yo, listen up here's a story about a little guy that lives in a blue world. And all day and all night and everything he sees is just blue like him inside and outside. Blue his house with a blue little window and a blue corvette and everything is blue for him and himself and everybody around cause he ain't got nobody to listen to…
 
 ## Table of Contents
 - [Installation](#installation)
@@ -14,21 +14,21 @@ A quality README.md is essential for an important project. The README introduces
 - [Questions](#questions)
 
 ## Installation
-To install this application, `git clone` this repository, or download the .zip file in the dropdown after clicking the green ‘Code’ button at the top of this repository—as long as it is in your local branch. Using the code editor of your choice, run `npm inquirer` in command line of terminal. Documentation for `Inquirer` can be accessed [here](https://www.npmjs.com/package/inquirer).
+I'm blue da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba diDa ba dee da ba di I'm blue da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba diDa ba dee da ba di
 
 ## Usage
-It is important to note that you are in the root directory in order for this application to run successfully. This application will initialize by running `node index.js` into the command line. The `inquirer` package for node.js triggers a series of questions regarding your project. Answer as much as possible in order to offer a quality README presentation that includes a fancy table of contents. The newly-generated README.md file will be found in the `dist` folder. Copy the contents and paste it to where you need it!
+I have a blue house With a blue window Blue is the colour of all that I wear Blue are the street And all the trees are too I have a girlfriend and she is so blue
 
-![demo.gif](/../main/assets/images/demo.gif)
+![screenshot.png](/../main/assets/images/screenshot.png)
 
 ## Contributing
-While I truly appreciate your interest in contributing to this application, I am not accepting contributions at this time.
+Blue are the people here that walk around blue like my corvette its in and outside blue are the words I say And what I think blue are the feelings that live inside me
 
 ## Tests
-Run `node index.js` in the command-line, ensure that you see `Success! A new README.md file has been created!` after answering the prompts.
+I'm blue da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba diDa ba dee da ba di I'm blue da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba diDa ba dee da ba di
 
 ## License
-This application is protected under the MIT license. Please visit this [link](https://choosealicense.com/licenses/mit/) for more information regarding this license.
+This application is protected under the GNU GPL v3 license. Please visit this [link](https://choosealicense.com/licenses/gpl-3.0/) for more information about this license.
 
 ## Questions
 For any questions about this repository, please contact me at [demi.h@me.com](mailto:demi.h@me.com).
