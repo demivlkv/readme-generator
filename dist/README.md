@@ -1,33 +1,34 @@
 
-# README Generator
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-yellowgreen)](https://opensource.org/licenses/Apache-2.0)
+# Professional README Generator
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)
 
 ## Description
-yo listen up here's a story about a little guy that lives in a blue world and all day and all night and everything he sees is just blue like him inside and outside blue his house with a blue little window and a blue corvette and everything is blue for him and himself and everybody around cuz he ain't got nobody to listen to listen to listen to...
+A quality README.md is essential for an important project. The README introduces a project, describes what the application is, how to use it, how to install, how to report issues, and how to make contributions—this last part increases the likelihood that other developers will contribute to the success of the project.   This particular project is a command-line application that dynamically generates a README.md file with ease. To view a sample of a README.md file created with this application, please refer to [sampleREADME.md](/../main/dist/sampleREADME.md) file in the `dist` folder.
 
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contribution](#contribution)
+- [Contributing](#contributing)
 - [Tests](#tests)
 - [License](#license)
 - [Questions](#questions)
 
 ## Installation
-i'm blue da be dee da bu dai da be dee da bu dai
+To install this application, `git clone` this repository, or download the .zip file in the dropdown after clicking the green ‘Code’ button at the top of this repository—as long as it is in your local branch. Using the code editor of your choice, run `npm inquirer` in command line of terminal. Documentation for `Inquirer` can be accessed [here](https://www.npmjs.com/package/inquirer).
 
 ## Usage
-i'm blue da be dee da bu dai da be dee da bu dai
+It is important to note that you are in the root directory in order for this application to run successfully. This application will initialize by running `node index.js` into the command line. The `inquirer` package for node.js triggers a series of questions regarding your project. Answer as much as possible in order to offer a quality README presentation that includes a fancy table of contents. The newly-generated README.md file will be found in the `dist` folder. Copy the contents and paste it to where you need it!
 
-![screenshot.png](/../main/assets/images/screenshot.png)
+![demo.gif](/../main/assets/images/demo.gif)
 
-## Contribution
-i'm blue da be dee da bu dai da be dee da bu dai
+## Contributing
+While I truly appreciate your interest in contributing to this application, I am not accepting contributions at this time.
+
 ## Tests
-i'm blue da be dee da bu dai da be dee da bu dai
+Run `node index.js` in the command-line, ensure that you see `Success! A new README.md file has been created!` after answering the prompts.
 
 ## License
-This application is protected under the Apache 2.0 license. Please visit this [link](https://choosealicense.com/licenses/apache-2.0/) for more information regarding this license.
+This application is protected under the MIT license. Please visit this [link](https://choosealicense.com/licenses/mit/) for more information regarding this license.
 
 ## Questions
 For any questions about this repository, please contact me at [demi.h@me.com](mailto:demi.h@me.com).

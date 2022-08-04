@@ -1,31 +1,43 @@
 # Project 9: Node.js Challenge
 ## Professional README Generator
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)
 
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+## Description
+A quality README.md is essential for an important project. The README introduces a project, describes what the application is, how to use it, how to install, how to report issues, and how to make contributions—this last part increases the likelihood that other developers will contribute to the success of the project.
 
-**User Story**
-```
-AS A developer
-I WANT a README generator
-SO THAT I can quickly create a professional README for a new project
-```
+This particular project is a command-line application that dynamically generates a README.md file with ease. To view a sample of a README.md file created with this application, please refer to the [sampleREADME.md](/../main/dist/sampleREADME.md) file in the `dist` folder.
 
-**Acceptance Criteria**
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
 
-```
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for information about my application repository
-THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-WHEN I enter my project title
-THEN this is displayed as the title of the README
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-WHEN I enter my GitHub username
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-WHEN I enter my email address
-THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README
-```
+## Installation
+To install this application, `git clone` this repository, or download the .zip file in the dropdown after clicking the green ‘Code’ button at the top of this repository—as long as it is in your local branch.
+
+Using the code editor of your choice, run `npm inquirer` in command line of terminal. Documentation for `Inquirer` can be accessed [here](https://www.npmjs.com/package/inquirer).
+
+## Usage
+It is important to note that you are in the root directory in order for this application to run successfully. This application will initialize by running `node index.js` into the command line. The `inquirer` package for node.js triggers a series of questions regarding your project. Answer as much as possible in order to offer a quality README presentation that includes a fancy table of contents.
+
+The newly-generated README.md file will be found in the `dist` folder. Copy the contents and paste it to where you need it!
+
+![demo.gif](/../main/assets/images/demo.gif)
+
+## Contributing
+While I truly appreciate your interest in contributing to this application, I am not accepting contributions at this time.
+
+## Tests
+Run `node index.js` in the command-line and ensure that you see `Success! A new README.md file has been created!` after answering the prompts.
+
+## License
+This application is protected under the MIT license. Please visit this [link](https://choosealicense.com/licenses/mit/) for more information regarding this license.
+
+## Questions
+For any questions about this repository, please contact me at [demi.h@me.com](mailto:demi.h@me.com).
+
+To view more of my works, please visit my GitHub: [demivlkv](https://github.com/demivlkv).
+  
