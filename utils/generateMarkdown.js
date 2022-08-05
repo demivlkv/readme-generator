@@ -1,4 +1,4 @@
-// return license badge based on which license is passed in
+// return license badge based on license selection
 const renderLicenseBadge = license => {
   if (license == 'Apache 2.0') {
     return `[![License: ${license}](https://img.shields.io/badge/License-Apache_2.0-yellowgreen)]`;
@@ -13,7 +13,7 @@ const renderLicenseBadge = license => {
   }
 };
 
-// return the respective license link
+// return the respective license link for the badge
 const renderLicenseLink = license => {
   if (license == 'Apache 2.0') {
     return `(https://opensource.org/licenses/Apache-2.0)`;

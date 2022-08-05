@@ -29,7 +29,7 @@ The **Inquirer** package for Node.js triggers a series of questions regarding yo
 
 The newly-generated README.md file will be found in the `dist` folder. Copy the contents and paste it to where you need it!
 
-A video walkthrough of this application can be found [here](https://youtu.be/7b_bRehAL90),
+A video walkthrough of this application can be found [here](https://youtu.be/7b_bRehAL90).
 
 ![demo.gif](/../main/assets/images/demo.gif)
 
