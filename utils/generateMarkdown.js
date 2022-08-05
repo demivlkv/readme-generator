@@ -31,11 +31,11 @@ const renderLicenseLink = license => {
 // returns the license section of README
 const renderLicenseSection = license => {
   if (license == 'Apache 2.0') {
-    return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/apache-2.0/) for more information about this license.`;
+    return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/apache-2.0/) for more information.`;
   } else if (license == 'GNU GPL v3') {
-    return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/gpl-3.0/) for more information about this license.`;
+    return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/gpl-3.0/) for more information.`;
   } else if (license == 'MIT') {
-    return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/mit/) for more information about this license.`;
+    return `This application is protected under the ${license} license. Please visit this [link](https://choosealicense.com/licenses/mit/) for more information.`;
   } else if (license == 'No License') {
     return `This application is protected under the ${license} exclusive copyright by default. Please visit this [link](https://choosealicense.com/no-permission/) for more information.`;
   } else {
@@ -116,8 +116,7 @@ const generateScreenshot = screenshots => {
 
 // generate markdown file for README
 const generateMarkdown = data => {
-  return `
-# ${data.title}
+  return `# ${data.title}
 ${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
 
 ## Description

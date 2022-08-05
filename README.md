@@ -5,7 +5,7 @@
 ## Description
 A quality README.md is essential for an important project. The README introduces the application, describes what the application is, how to use it, how to install, how to report issues, and how to make contributions—this last part increases the likelihood that other developers will contribute to the success of the project.
 
-This particular project is a command-line application that dynamically generates a README.md file with ease. To view a sample of a README.md file created with this application, please refer to the [sampleREADME.md](/../main/dist/sampleREADME.md) file in the `dist` folder.
+This particular project is a command-line application that dynamically generates a README.md file with ease. To view a sample of a README.md file created with this application, please refer to the [README.md](/../main/dist/README.md) file in the `dist` folder.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -29,16 +29,21 @@ The **Inquirer** package for Node.js triggers a series of questions regarding yo
 
 The newly-generated README.md file will be found in the `dist` folder. Copy the contents and paste it to where you need it!
 
+A video walkthrough of this application can be found [here](https://youtu.be/7b_bRehAL90),
+
 ![demo.gif](/../main/assets/images/demo.gif)
 
 ## Contributing
 I appreciate your interest in contributing to this application, however, I am not accepting contributions at this time.
 
 ## Tests
-Run `node index.js` in the command-line and ensure that you see `Success! A new README.md file has been created!` after a series of prompts.
+Enter the following command in terminal to run tests for this application:
+```
+npm run test
+```
 
 ## License
-This application is protected under the MIT license. Please visit this [link](https://choosealicense.com/licenses/mit/) for more information about this license.
+This application is protected under the MIT license. Please visit this [link](https://choosealicense.com/licenses/mit/) for more information.
 
 ## Questions
 For any questions or feedback about this repository, please contact me at [demi.h@me.com](mailto:demi.h@me.com).

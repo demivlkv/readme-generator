@@ -1,34 +1,32 @@
-
-# Sample Project Title
-[![License: No License](https://img.shields.io/badge/License-No_License-lightgreen)](https://choosealicense.com/no-permission/)
+# Professional README Generator
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)
 
 ## Description
-Yo, listen up here's a story about a little guy that lives in a blue world. And all day and all night and everything he sees is just blue like him inside and outside. Blue his house with a blue little window and a blue corvette and everything is blue for him and himself and everybody around cause he ain't got nobody to listen to…
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Tests](#tests)
+
 - [License](#license)
 - [Questions](#questions)
 
 ## Installation
-I'm blue da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba diDa ba dee da ba di I'm blue da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba diDa ba dee da ba di
+Vitae semper quis lectus nulla. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Nisi lacus sed viverra tellus in hac habitasse platea. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in.
 
 ## Usage
-I have a blue house With a blue window Blue is the colour of all that I wear Blue are the street And all the trees are too I have a girlfriend and she is so blue
+Nam aliquam sem et tortor. Dui accumsan sit amet nulla facilisi morbi tempus iaculis. Dui id ornare arcu odio ut sem nulla pharetra diam. Tempus imperdiet nulla malesuada pellentesque. Donec ultrices tincidunt arcu non sodales neque. Adipiscing elit ut aliquam purus sit amet luctus. At risus viverra adipiscing at in. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. Et pharetra pharetra massa massa ultricies mi quis.
 
-![demo.gif](/../main/assets/images/demo.gif)
+![sample-screenshot.png](/../main/assets/images/sample-screenshot.png)
 
 ## Contributing
-Blue are the people here that walk around blue like my corvette its in and outside blue are the words I say And what I think blue are the feelings that live inside me
+Sed odio morbi quis commodo. Id donec ultrices tincidunt arcu. At volutpat diam ut venenatis.
 
-## Tests
-I'm blue da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba diDa ba dee da ba di I'm blue da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba di Da ba dee da ba diDa ba dee da ba di
+
 
 ## License
-This application is protected under the No License exclusive copyright by default. Please visit this [link](https://choosealicense.com/no-permission/) for more information.
+This application is protected under the MIT license. Please visit this [link](https://choosealicense.com/licenses/mit/) for more information.
 
 ## Questions
 For any questions about this repository, please contact me at [demi.h@me.com](mailto:demi.h@me.com).
