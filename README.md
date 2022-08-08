@@ -1,6 +1,6 @@
 # Project 9: Node.js Challenge
 ## Professional README Generator
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)
+[![License: No License](https://img.shields.io/badge/License-No_License-lightgreen)](https://choosealicense.com/no-permission/)
 
 ## Description
 A quality README.md is essential for an important project. The README introduces the application, describes what the application is, how to use it, how to install, how to report issues, and how to make contributions—this last part increases the likelihood that other developers will contribute to the success of the project.
@@ -43,7 +43,7 @@ npm run test
 ```
 
 ## License
-This application is protected under the MIT license. Please visit this [link](https://choosealicense.com/licenses/mit/) for more information.
+This application is protected under the ${license} exclusive copyright by default. Please visit this [link](https://choosealicense.com/no-permission/) for more information.
 
 ## Questions
 For any questions or feedback about this repository, please contact me at [demi.h@me.com](mailto:demi.h@me.com).
