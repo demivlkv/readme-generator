@@ -43,7 +43,7 @@ npm run test
 ```
 
 ## License
-This application is protected under the ${license} exclusive copyright by default. Please visit this [link](https://choosealicense.com/no-permission/) for more information.
+This application is protected under the No License exclusive copyright by default. Please visit this [link](https://choosealicense.com/no-permission/) for more information.
 
 ## Questions
 For any questions or feedback about this repository, please contact me at [demi.h@me.com](mailto:demi.h@me.com).
