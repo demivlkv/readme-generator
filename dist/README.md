@@ -32,4 +32,3 @@ This application is protected under the MIT license. Please visit this [link](ht
 For any questions about this repository, please contact me at [demi.h@me.com](mailto:demi.h@me.com).
 
 To view more of my works, please visit my GitHub: [demivlkv](https://github.com/demivlkv).
-  
