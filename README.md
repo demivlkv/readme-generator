@@ -16,7 +16,7 @@ This particular project is a command-line application that dynamically generates
 - [Questions](#questions)
 
 ## Installation
-To install this application, `git clone` this repository, or download the `.zip` file in the dropdown after clicking the green ‘Code’ button at the top of this repository—as long as it is in your local branch.
+To install this application, `git clone` this repository, or download the `.zip` file in the dropdown after clicking the ‘Code’ button at the top of this repository—as long as it is in your local branch.
 
 Using the code editor of your choice, ensure that **node.js** is installed (visit this [link here](https://nodejs.dev/learn/how-to-install-nodejs) for info on how to install **node.js**). Then you would need to install **Inquirer.js** node package by entering `npm inquirer` in the command line of terminal. Documentation for **Inquirer** can be accessed [here](https://www.npmjs.com/package/inquirer).
 
